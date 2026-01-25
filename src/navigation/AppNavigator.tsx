@@ -1,4 +1,5 @@
 import React from 'react';
+import {Text} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import SignInScreen from '../screens/SignInScreen';
@@ -39,7 +40,7 @@ const TabNavigator = () => {
         component={DashboardScreen}
         options={{
           tabBarLabel: 'Home',
-          tabBarIcon: ({color}) => <span style={{fontSize: 20}}>🏠</span>,
+          tabBarIcon: ({color}) => <Text style={{fontSize: 20}}>🏠</Text>,
         }}
       />
       <Tab.Screen
@@ -47,7 +48,7 @@ const TabNavigator = () => {
         component={CalendarScreen}
         options={{
           tabBarLabel: 'Events',
-          tabBarIcon: ({color}) => <span style={{fontSize: 20}}>📅</span>,
+          tabBarIcon: ({color}) => <Text style={{fontSize: 20}}>📅</Text>,
         }}
       />
       <Tab.Screen
@@ -55,7 +56,7 @@ const TabNavigator = () => {
         component={NewsFeedScreen}
         options={{
           tabBarLabel: 'News',
-          tabBarIcon: ({color}) => <span style={{fontSize: 20}}>📰</span>,
+          tabBarIcon: ({color}) => <Text style={{fontSize: 20}}>📰</Text>,
         }}
       />
       <Tab.Screen
@@ -63,7 +64,7 @@ const TabNavigator = () => {
         component={ResourcesScreen}
         options={{
           tabBarLabel: 'Resources',
-          tabBarIcon: ({color}) => <span style={{fontSize: 20}}>📚</span>,
+          tabBarIcon: ({color}) => <Text style={{fontSize: 20}}>📚</Text>,
         }}
       />
       <Tab.Screen
@@ -71,7 +72,7 @@ const TabNavigator = () => {
         component={SocialScreen}
         options={{
           tabBarLabel: 'Social',
-          tabBarIcon: ({color}) => <span style={{fontSize: 20}}>👥</span>,
+          tabBarIcon: ({color}) => <Text style={{fontSize: 20}}>👥</Text>,
         }}
       />
       <Tab.Screen
@@ -79,7 +80,7 @@ const TabNavigator = () => {
         component={MemberProfileScreen}
         options={{
           tabBarLabel: 'Profile',
-          tabBarIcon: ({color}) => <span style={{fontSize: 20}}>👤</span>,
+          tabBarIcon: ({color}) => <Text style={{fontSize: 20}}>👤</Text>,
         }}
       />
     </Tab.Navigator>

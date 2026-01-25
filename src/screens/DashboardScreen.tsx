@@ -5,14 +5,14 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  SafeAreaView,
 } from 'react-native';
-import {COLORS, FONT_SIZES} from '../constants/theme';
+import {SafeAreaView} from 'react-native-safe-area-context';
+import {COLORS, FONT_SIZES} from '@constants/theme';
 
 const DashboardScreen = ({navigation}: any) => {
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView>
+    <SafeAreaView style={styles.container} edges={['top']}>
+      <ScrollView showsVerticalScrollIndicator={false}>
         {/* Header */}
         <View style={styles.header}>
           <Text style={styles.welcomeText}>Welcome to</Text>

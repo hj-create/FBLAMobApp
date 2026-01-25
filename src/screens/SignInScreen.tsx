@@ -24,7 +24,7 @@ const SignInScreen = ({ navigation }: any) => {
       return;
     }
     // Accept any email and password for demo purposes
-    // Navigate to main app dashboard
+    // Navigate to main app tabs (Dashboard is the first tab)
     navigation.navigate('MainTabs');
   };
 

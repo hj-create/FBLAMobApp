@@ -60,6 +60,28 @@ npm install
 # or
 yarn install
 ```
+1.1 If there are errors on the packages requirements:
+npm outdated
+npm update
+
+Force-update package.json versions (controlled)
+npx npm-check-updates -u
+npm install
+
+Safe expo combo
+npx npm-check-updates '/^(?!expo|react-native).*$/' -u
+npm install
+
+Clean install
+rm -rf node_modules package-lock.json
+npm install
+expo start -c
+
+Runtime errors in Android using Expo app
+npx expo-doctor
+npx expo install --check
+npx expo install --fix
+
 
 2. Install Android dependencies:
 ```bash
